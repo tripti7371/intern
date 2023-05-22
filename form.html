@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightblue;
+            font-size: 18px;
+    
+        }
+        form{
+            background-color: azure;
+            padding: 50px;
+            margin: 10px 50px;
+            width: 500px;
+
+
+        }
+        input{
+            height: 20px;
+            width: 200px;
+            border-radius: 5px;
+            float: right;
+        }
+        .button{
+            background-color: green;
+            height: 40px;
+            color: white;
+            text-transform: uppercase;
+            font-size: large;
+            border: 2px solide green;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <from>
+        <h1>Student Registration Form</h1>
+        <lable for="fullname">Full Name :</lable>
+        <input type="text" placeholder="Enter your name" id="fullname" required>
+<br><br>
+<lable for="pass">Password</lable>
+<input type="Password" id="pass">
+<br><br>
+<lable for="mail">Email</lable>
+<input type="email" id="mail" >
+<br><br>
+<label for="color">Enter your color value</label>
+<input id="color" type="color">
+<br><br>
+<lable for="DOB">Enter your D.O.B.</lable>
+<input id="DOB" type="data" min="2023-05-15">
+<br><br>
+<lable for="datetime">Enter your meeting Date and Time</lable>
+<input type="datetime-local" id="datetime">
+<br><br>
+<lable for="resume">Please upload your resume</lable>
+<input type="file" id="resume" multiple>
+<br><br>
+<input type="hidden" value="3168" id="studentid">
+
+
+<input type="number" max="2020" min="2010">
+<br><br>
+<lable for="hithud">Enter your Github URL</lable>
+<input>
+
+    </from>
+    
+</body>
+</html>
