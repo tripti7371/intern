@@ -4,108 +4,132 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            background-color: lightblue;
-            font-size: 18px;
+    <title>HTML Form</title>
+<style>
+body{
+    background-color: lightblue;
+    font-size: 18px;
+}
+form{
+    background-color: azure;
+    padding: 50px;
+    margin: 10px 50px;
+    width: 500px;
+   
+}
+/* input{
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    float: right;
     
-        }
-        form{
-            background-color: azure;
-            padding: 50px;
-            margin: 10px 50px;
-            width: 500px;
+    
+} */
+.button{
+    background-color: rgba(0, 128, 0, 0);
+    height: 40px;
+    color: green;
+    text-transform: uppercase;
+    font-size: large;
+    border: 2px solid green;
+}
 
 
-        }
-      /*  input{
-            height: 20px;
-            width: 200px;
-            border-radius: 5px;
-    
-        } */
-        .button{
-            background-color: green;
-            height: 40px;
-            color: white;
-            text-transform: uppercase;
-            font-size: large;
-            border: 2px solide green;
-        }
-    </style>
+</style>
 
 
 
 </head>
 <body>
-    <from>
-        <h1>Student Registration Form</h1>
-        <lable for="fullname">Full Name :</lable>
-        <input type="text" placeholder="Enter your name" id="fullname" required>
+    
+    <form>
+        <h1>Student Registration From</h1>
+<label for="fullname">Full Name :</label>
+<input type="text" placeholder="Enter your name" id="fullname" value="Yogesh">
 <br><br>
-<lable for="pass">Password</lable>
-<input type="Password" id="pass">
+<label for="pass">Password</label>
+<input type="password" id="pass">
 <br><br>
-<lable for="mail">Email</lable>
-<input type="email" id="mail" >
+<label for="mail">EMail</label>
+<input type="email" id="mail">
 <br><br>
 <label for="color">Enter your color value</label>
 <input id="color" type="color">
+<br>
+<br>
+<label for="DOB">Enter your D.O.B.</label>
+<input id="DOB"  type="date"  min="1991-01-01">
 <br><br>
-<lable for="DOB">Enter your D.O.B.</lable>
-<input id="DOB" type="data" min="2023-05-15">
+<label for="datetime">Enter your meeting Date & time</label>
+<input type="datetime-local" id="datetime" >
 <br><br>
-<lable for="datetime">Enter your meeting Date and Time</lable>
-<input type="datetime-local" id="datetime">
-<br><br>
-<lable for="resume">Please upload your resume</lable>
+<label for="resume">Please upload your resume</label>
 <input type="file" id="resume" multiple>
 <br><br>
+
 <input type="hidden" value="3168" id="studentid">
-
-
-<input type="number" max="2020" min="2010">
 <br><br>
-<lable for="hithud">Enter your Github URL</lable>
+<label for="hithub">Enter your Github URL</label>
 <input type="url" id="github">
 <br><br>
-<p>Please Selecr your Gender</p>
+<p>Please Select your Gender</p>
 <input type="radio" id="male" name="gender">
-<lable for="male">Male</lable>
-<input type="radio" id="female" name="gender">
-<lable for="female">Female</lable>
-
- <!--p>Please Select Your Fav Car</p>
-
-<input typr="radio" id="Mahindra" name="car"><lable for="Mahindra">Mahindra</lable>
-<input typr="radio" id="Kia" name="car"><lable for="Kia">Kia</lable>
-<input typr="radio" id="Maruti" name="car"><lable for="Maruti">Maruti</lable>
-<input typr="radio" id="Tata" name="car"><lable for="Tata">Tata</lable -->
+<label for="male">Male</label>
+<input type="radio" id="female" name="gender" >
+<label for="female">Female</label>
 
 
-<br><br>
-<p>Please select Your Fav Car</p>
+<!-- <p>Pleae select your Fav Car</p>
 
-<input typr="checkbox" id="Mahindra"><lable for="Mahindra">Mahindra</lable>
-<input typr="checkbox" id="Kia"><lable for="Kia">Kia</lable>
-<input typr="checkbox" id="Maruti"><lable for="Maruti">Maruti</lable>
-<input typr="checkbox" id="Tata"><lable for="Tata">Tata</lable>
+
+<input type="radio" id="Mahindra" name="car"><label for="Mahindra">Mahindra</label>
+<input type="radio" id="Kia" name="car"><label for="kia">Kia</label>
+<input type="radio" id="Maruti" name="car"><label for="Maruti">Maruti</label>
+<input type="radio" id="Tata" name="car"><label for="tata">Tata</label> -->
 
 <br><br>
-<select>
+<p>Pleae select your Fav Cars</p>
+
+<input type="checkbox" id="Mahindra"><label for="Mahindra">Mahindra</label>
+<input type="checkbox" id="Kia"><label for="Kia">Kia</label>
+<input type="checkbox" id="Maruti"><label for="Maruti">Maruti</label>
+<input type="checkbox" id="Tata"><label for="Tata">Tata</label>
+
+<br><br>
+<label for="schoolclass">Please select your class</label>
+<select id="schoolclass">
+<optgroup label="Class 1">
+<option>Section A</option>
+<option>Section B</option>
+</optgroup>
+<option value="2">Class 2</option>
+<option>Class 3</option>
+<option disabled>Class 4</option>
+<option>Class 5</option>
+<option>Class 6</option>
+<option>Class 7</option>
+
+
 
 </select>
 
 
+<br><br>
+
+
+<label for="query">Please write your Query</label>
+<textarea id="query" rows="10" cols="50"></textarea>
+
 
 <br><br>
-<input type="reset" class="button">
 
-<input type="checkbox" value="submit" class="button">
+<input type="reset" class="button" value="Reset Me">
 
 
-    </from>
-    
+
+<!-- <input type="image" src="/images/586383c67d90850fc3ce2914.png" width="60px"> -->
+
+ <input type="submit" value="Login" class="button"> 
+    </form>
 </body>
 </html>
